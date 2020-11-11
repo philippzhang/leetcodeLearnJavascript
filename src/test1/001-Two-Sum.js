@@ -15,7 +15,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function (numbers, target) {
+var twoSum2 = function (numbers, target) {
 
     for (var i = 0; i < numbers.length - 1; i++) {
         for (var j = i + 1; j < numbers.length; j++) {
@@ -24,7 +24,7 @@ var twoSum = function (numbers, target) {
     }
 };
 
-var twoSum2 = function (numbers, target) {
+var twoSum = function (numbers, target) {
     var map = {};
     for (var i = 0; i < numbers.length; i++) {
         var n = numbers[i];
