@@ -6,11 +6,6 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
-/**
- * @param {TreeNode} root
- * @return {number}
- */
-
 function TreeNode(val, left, right) {
     this.val = (val === undefined ? 0 : val)
     this.left = (left === undefined ? null : left)
@@ -29,7 +24,10 @@ function getMaxPathS (root){
     ret = max(ret,left+right+root.val)
     return max(left,right)+root.val
 }
-
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
 var maxPathSum = function (root) {
     ret = -Number.MAX_VALUE
     getMaxPathS(root)
